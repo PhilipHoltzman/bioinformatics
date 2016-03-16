@@ -6,7 +6,7 @@
 print('\n\n..:DNA Replication Engine:.\n')
 
 # initial strand
-iStrand = 'AATGCCTATGGC'
+iStrand = ''
 # complimentary strand
 cStrand = ''
 
@@ -24,5 +24,5 @@ for i in iStrand:
 print('\n\n Initial Sequence Strand:\n\n ' + iStrand+ '\n')
 
 
-print(' Complimentary Base Pair Sequence:\n\n ' + cStrand + '\n\n')
+print(' Complimentary Base Pair Sequence:\n\n ' + cStrand[::-1] + '\n\n')
 
