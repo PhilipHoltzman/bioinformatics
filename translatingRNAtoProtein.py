@@ -3,48 +3,39 @@
 # Translating RNA to a protein
 
 rnaCodonTable = {
-	'UUU':'F',    'AUU':'I',
-	'UUC':'F',    'AUC':'I',
-	'UUA':'L',    'AUA':'I',
-	'UUG':'L',    'AUG':'M',
-	'UCU':'S',    'ACU':'T',
-	'UCC':'S',    'ACC':'T',
-	'UCA':'S',    'ACA':'T',
-	'UCG':'S',    'ACG':'T',
-	'UAU':'Y',    'AAU':'N',
-	'UAC':'Y',    'AAC':'N',
-	'UAA':'Stop', 'AAA':'K',
-	'UAG':'Stop', 'AAG':'K',
-	'UGU':'C',    'AGU':'S',
-	'UGC':'C',    'AGC':'S',
-	'UGA':'Stop', 'AGA':'R',
-	'UGG':'W',    'AGG':'R',
-	'CUU':'L',    'GUU':'V',
-	'CUC':'L',    'GUC':'V',
-	'CUA':'L',    'GUA':'V',
-	'CUG':'L',    'GUG':'V',
-	'CCU':'P',    'GCU':'A',
-	'CCC':'P',    'GCC':'A',
-	'CCA':'P',    'GCA':'A',
-	'CCG':'P',    'GCG':'A',
-	'CAU':'H',    'GAU':'D',
-	'CAC':'H',    'GAC':'D',
-	'CAA':'Q',    'GAA':'E',
-	'CAG':'Q',    'GAG':'E',
-	'CGU':'R',    'GGU':'G',
-	'CGC':'R',    'GGC':'G',
-	'CGA':'R',    'GGA':'G',
-	'CGG':'R',    'GGG':'G',
+	'F':'UUU',    'I':'AUU',
+	'F':'UUC',    'I':'AUC',
+	'L':'UUA',    'I':'AUA',
+	'L':'UUG',    'M':'AUG',
+	'S':'UCU',    'T':'ACU',
+	'S':'UCC',    'T':'ACC',
+	'S':'UCA',    'T':'ACA',
+	'S':'UCG',    'T':'ACG',
+	'Y':'UAU',    'N':'AAU',
+	'Y':'UAC',    'N':'AAC',
+	'Stop':'UAA', 'K':'AAA',
+	'Stop':'UAG', 'K':'AAG',
+	'C':'UGU',    'S':'AGU',
+	'C':'UGC',    'S':'AGC',
+	'Stop':'UGA', 'R':'AGA',
+	'W':'UGG',    'R':'AGG',
+	'L':'CUU',    'V':'GUU',
+	'L':'CUC',    'V':'GUC',
+	'L':'CUA',    'V':'GUA',
+	'L':'CUG',    'V':'GUG',
+	'P':'CCU',    'A':'GCU',
+	'P':'CCC',    'A':'GCC',
+	'P':'CCA',    'A':'GCA',
+	'P':'CCG',    'A':'GCG',
+	'H':'CAU',    'D':'GAU',
+	'H':'CAC',    'D':'GAC',
+	'Q':'CAA',    'E':'GAA',
+	'Q':'CAG',    'E':'GAG',
+	'R':'CGU',    'G':'GGU',
+	'R':'CGC',    'G':'GGC',
+	'R':'CGA',    'G':'GGA',
+	'R':'CGG',    'G':'GGG'
 }
 
 gString = 'AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA'
- 
-output = ''
 
-
-for p in gString:
-	if p in rnaCodonTable.keys():
-		output += rnaCodonTable[p]
-
-print(type(output))
-print(output)
